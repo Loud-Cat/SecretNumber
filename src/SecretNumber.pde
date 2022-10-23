@@ -19,7 +19,7 @@ void setup() {
   rectMode(CENTER);
   ellipseMode(RADIUS);
   
-  title = createFont("Berlin Sans FB Regular.TTF", 128);
+  title = createFont("SecularOne-Regular.ttf", 128);
   textFont(title);
   state = Screen.MENU;
   
@@ -45,7 +45,7 @@ void draw() {
     
     fill(0);
     textSize(65);
-    text("<", 50, height - 60);
+    text("<", 50, height - 65);
     
     input.display();
   }
