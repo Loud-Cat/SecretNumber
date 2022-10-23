@@ -58,7 +58,7 @@ class Input {
   }
   
   void win() {
-    txt = "Correct! the number was: " + value + "\nYou guessed correctly in " + total + " guesses!";
+    txt = "Correct! The number was: " + value + "\nYou guessed correctly in " + total + " guesses!";
     playing = false;
     won = true;
     active = false;
@@ -114,5 +114,5 @@ class Input {
         value = value + key;
     }
   }
-
+  
 }
