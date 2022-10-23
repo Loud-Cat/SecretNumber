@@ -130,7 +130,7 @@ void mouseClicked() {
 
   else {
     boolean b = (state == Screen.COMP_CHOICE) ? playing : (!playing && !computer.won);
-    input.setActive(b && mouseX > width/2 - input.w/2 && mouseX < width/2 + input.w/2 &&
+    input.active = (b && mouseX > width/2 - input.w/2 && mouseX < width/2 + input.w/2 &&
       mouseY > height/2 - input.h/2 && mouseY < height/2 + input.h/2);
 
     if (!playing && !computer.won && !input.won &&
