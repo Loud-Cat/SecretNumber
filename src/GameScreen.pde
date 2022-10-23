@@ -27,10 +27,10 @@ void initGame() {
 }
 
 void drawMenu() {
-  textSize(60);
+  textSize(55);
   text("Secret Number!", width/2, 32);
   
-  textSize(25);
+  textSize(22);
   text("Someone will generate a random number.\nWho will it be?", width/2, 100);
   
   fill(0, 200, 0);
@@ -40,7 +40,7 @@ void drawMenu() {
   square(x2, y, squaresize);
   
   fill(255);
-  textSize(28);
+  textSize(25);
   text("You\npick the number", x1, y);
   text("Computer\npicks the number", x2, y);
 }
@@ -48,7 +48,7 @@ void drawMenu() {
 void userChoice() {
   fill(255);
 
-  textSize(60);
+  textSize(55);
   text("User's Choice", width/2, 32);
 
   textSize(25);
@@ -59,10 +59,10 @@ void userChoice() {
   else
     text("x = " + input.value, width/2, 100);
   
-  textSize(28);
+  textSize(25);
   if (playing) {
     if (computer.final_guess <= 0)
-      text("Press NEXT to see\nthe computer's guess", width/2, height * 11/12 - 5);
+      text("Press NEXT to see\nthe computer's guess", width/2, height * 11/12 - 15);
   }
 
   if (computer.final_guess > 0) {
@@ -100,7 +100,7 @@ void userChoice() {
 void computerChoice() {
   fill(255);
 
-  textSize(60);
+  textSize(55);
   text("Computer's Choice", width/2, 32);
 
   textSize(25);
