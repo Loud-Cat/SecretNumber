@@ -95,8 +95,6 @@ class Input {
     }
   }
   
-  void setActive(boolean a) { active = a; }
-  
   int getInt() {
     return value.matches("100|\\d{1,2}") ? Integer.parseInt(value) : -1;
   }
